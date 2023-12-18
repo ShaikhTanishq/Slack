@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.Mgenlearnbtn {
+  background-color: transparent;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.Mgenlearnbtn:hover, .Mgenlearnbtn:focus {
+  background-color: none;
+}
+
+
+.MGL {
+  position: relative;
+}
+
+.mgl-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  }
+
+.mgl-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.show {display: block;}
+</style>
+</head>
+<body style="background-color:#a690a6;">
+
+<div class="MGL">
+  <button onclick="MgL()" class="Mgenlearnbtn">MgenLearn</button>
+  <div id="myMGL" class="mgl-content">
+    <a href=" ">Home</a>
+    <a href="">About</a>
+    <a href="">Contact</a>
+  </div>
+</div>
+
+<script>
+function MgL() {
+  document.getElementById("myMGL").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("mgl-content");
+    var i;
+    for (i = 0; i < mgls.length; i++) {
+      var openDropdown = mglss[i];
+      if (openMGL.classList.contains('show')) {
+        openMGL.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>
